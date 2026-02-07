@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 李文鹏
+# title: 李文鹏
 
 # Name pronunciation (optional)
 name_pronunciation: Dominic Li
