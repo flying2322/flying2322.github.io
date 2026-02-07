@@ -20,9 +20,13 @@ superuser: true
 role: OperationAlgorithm Engineer(developer)
 
 # Organizations/Affiliations to show in About widget
+# organizations:
+#   - name: Hai Robotics
+#     url: https://www.hairobotics.com/
+
 organizations:
-  - name: Hai Robotics
-    url: https://www.hairobotics.com/
+  - name: Heisenberg
+    url: http://121.40.143.58/#/
 
 # Short bio (displayed in user profile at end of posts)
 bio: I'm an Operations Research(OR) engineer who finds joy in bridging the gap between academic research and practical robotics systems. When I'm not optimizing OR operations or coding in Python/C++, you'll likely find me hiking trails with my camera or spending quality time with my gears. I believe the best solutions emerge when we bring together rigorous research, hands-on development, and a genuine curiosity for the world around us.
