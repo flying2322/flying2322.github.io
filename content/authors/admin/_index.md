@@ -1,9 +1,9 @@
 ---
 # Display name
-# title: 李文鹏
+title: Dominic Li
 
 # Name pronunciation (optional)
-name_pronunciation: Dominic Li
+# name_pronunciation: 李文鹏
 
 # Full name (for SEO)
 first_name: Dominic
