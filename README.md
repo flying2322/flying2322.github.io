@@ -63,6 +63,7 @@ We're an open source movement that depends on your support to stay online and th
 
 ### 20 April, 2024
 . Folder hierearchy
+```bash
 ├── LICENSE.md
 ├── README.md
 ├── academic.Rproj
@@ -148,3 +149,4 @@ We're an open source movement that depends on your support to stay online and th
 └── theme.toml
 
 32 directories, 52 files
+```
