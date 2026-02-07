@@ -25,7 +25,7 @@ role: OperationAlgorithm Engineer(developer)
 #     url: https://www.hairobotics.com/
 
 organizations:
-  - name: Heisenberg
+  - name: Tech Blogs & Notes
     url: http://121.40.143.58/#/
 
 # Short bio (displayed in user profile at end of posts)
