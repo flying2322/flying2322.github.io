@@ -51,8 +51,13 @@ We're an open source movement that depends on your support to stay online and th
 
 
 ## Note
-### 2024年4月19日
-- 第一次部署成功，但是域名有点奇怪：https://flying2322.github.io/dominicli.github.io/ 希望简短好记一些。或许想办法申请下来：dominic.cn  ？
+
+### 2026.2.7
+- [Done] 2026.2.7 修复了域名过长，和github仓库名不一致的问题
+- Modify details important
+  
+### 2024.4.19
+- 第一次部署成功，但是域名有点奇怪：https://flying2322.github.io/dominicli.github.io/ 希望简短好记一些。或许想办法申请下来：dominic.cn
 - 大致浏览了Hugo个人网页部署 文件的目录结构
 - 删除之前通过netlify部署的内容，保留本网站并长期维护，书写博客之地。
 
