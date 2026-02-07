@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Algorithm Engineer(developer)
+role: OperationAlgorithm Engineer(developer)
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -25,12 +25,14 @@ organizations:
     url: https://www.hairobotics.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My interests include warehouse robotics, RMFS simulation and optimization and MAPF.
+bio: I'm an Operations Research(OR) engineer who finds joy in bridging the gap between academic research and practical robotics systems. When I'm not optimizing OR operations or coding in Python/C++, you'll likely find me hiking trails with my camera or spending quality time with my gears. I believe the best solutions emerge when we bring together rigorous research, hands-on development, and a genuine curiosity for the world around us.
+
+
 
 # Interests to show in About widget
 interests:
-  - Operations Research
-  - Warehouse Optimization
+  - Operations Research Topics
+  - Warehouse Management Optimization
   - Multi-Agent Pathing Finding
   - Cellular Automaton
 
@@ -118,7 +120,8 @@ social:
 highlight_name: false
 ---
 
-Hi there~ This is Dominic Li, a software algorithm developer in Amsterdam, NL.
+Hi there~ This is Dominic Li, an OR algorithm developer in Shenzhen, P.R.China.
 
-This is my playground to show some funny and interesting discoveries. Hope you enjoy it and have fun!
+Welcome to my digital garden, a place where I cultivate ideas ranging from warehouse robotics and algorithmic optimization to the latest tech gadgets that catch my eye. Whether I’m diving deep into multi-agent pathfinding, capturing moments through photography, or simply enjoying life with my cats, this space documents the fun discoveries made along the way. I invite you to explore my projects and posts—hopefully, you’ll find some inspiration here and enjoy the journey as much as I do.
+
 {style="text-align: justify;"}
