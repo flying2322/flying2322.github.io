@@ -58,8 +58,8 @@ skills:
         percent: 90
         color: '#00599C'
         color_border: '#004482'
-        icon: cplusplus
-        icon_pack: custom
+        icon: code
+        icon_pack: fas
       - name: Java
         description: MIP modeling, CPLEX integration
         percent: 85

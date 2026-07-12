@@ -206,48 +206,33 @@ sections:
       title: Popular Topics
     design:
       columns: '2'
-  - block: contact
+  - block: markdown
     id: contact
     content:
       title: Contact
-      subtitle:
+      subtitle: ''
       text: |-
         Feel free to reach out regarding path planning, operations research, or algorithm engineering opportunities.
-      email: lwp01@qq.com
-      phone: '+86 186 1703 3167'
-      address:
-        street: 6A501, Mingxigu, No. 12 Industrial 6th Road
-        city: Nanshan District, Shenzhen
-        region: Guangdong
-        postcode: ''
-        country: China
-        country_code: CN
-      contact_links:
-        - icon: linkedin
-          icon_pack: fab
-          name: LinkedIn
-          link: 'https://www.linkedin.com/in/wenpeng-li-2aa689121/'
-        - icon: github
-          icon_pack: fab
-          name: GitHub
-          link: 'https://github.com/flying2322'
-        - icon: graduation-cap
-          icon_pack: fas
-          name: Google Scholar
-          link: 'https://scholar.google.co.uk/citations?user=krKEnn4AAAAJ&hl=nl'
-      coordinates:
-        latitude: '22.4833'
-        longitude: '113.9167'
-      # Automatically link email and phone or display as text?
-      autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+
+        <form action="https://formsubmit.co/lwp01@qq.com" method="POST" class="contact-form mt-4">
+          <input type="hidden" name="_subject" value="New message from PandaBoy website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://flying2322.github.io/#contact">
+          <div class="mb-3">
+            <label class="form-label" for="contact-name">Name</label>
+            <input class="form-control" type="text" id="contact-name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="contact-email">Email</label>
+            <input class="form-control" type="email" id="contact-email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send</button>
+        </form>
     design:
-      columns: '2'
+      columns: '1'
 ---

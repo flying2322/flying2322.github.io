@@ -50,3 +50,24 @@
 #about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(6) .skill-progress-bar {
   background-color: #EF6C00 !important;
 }
+
+/* C/C++ skill icon — Wowchemy v5 does not render icon_pack: custom; use SVG via CSS */
+#skills .skill-name .fa-code,
+#about .skill-name .fa-code,
+.section-skills .skill-name .fa-code {
+  position: relative;
+  color: transparent !important;
+  width: 1.15em;
+  height: 1.15em;
+  display: inline-block;
+  vertical-align: -0.15em;
+}
+
+#skills .skill-name .fa-code::before,
+#about .skill-name .fa-code::before,
+.section-skills .skill-name .fa-code::before {
+  content: '' !important;
+  position: absolute;
+  inset: 0;
+  background: url('/media/icons/cplusplus.svg') center / contain no-repeat;
+}
