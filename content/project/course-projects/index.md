@@ -1,6 +1,6 @@
 ---
-title: 清华大学课程项目集
-summary: 涵盖 CPLEX MIP 求解、元胞自动机交通仿真、仓库拣选路径启发式设计、Tabu Search 求解 PDPTW 等。
+title: Tsinghua University Course Projects
+summary: Collection of OR course projects including CPLEX MIP solving, cellular automata traffic simulation, warehouse picking heuristics, and Tabu Search for PDPTW.
 tags:
   - Operations Research
 date: '2020-06-01T00:00:00Z'
@@ -8,7 +8,7 @@ date: '2020-06-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: 运筹优化课程项目
+  caption: Operations research course projects
   focal_point: Smart
 
 links: []
@@ -19,26 +19,26 @@ url_video: ''
 slides: ''
 ---
 
-清华大学物流工程硕士期间的主要课程项目汇总。
+Summary of key course projects during the MEng in Logistics Engineering at Tsinghua University.
 
-## 项目列表
+## Project List
 
-### 1. Java 调 CPLEX 实现 MIP 问题
+### 1. Java + CPLEX for MIP Problems
 
-使用 Java 调用 IBM CPLEX 求解器，对混合整数规划（MIP）问题进行建模与求解，掌握 Branch & Bound、Branch & Price、Branch & Cut 等精确算法框架。
+Used Java to invoke IBM CPLEX solver for mixed integer programming (MIP) modeling and solving, mastering exact algorithm frameworks including Branch & Bound, Branch & Price, and Branch & Cut.
 
-### 2. 基于元胞自动机的交通系统路径选择策略研究
+### 2. Cellular Automata Traffic Path Selection Strategy
 
-将元胞自动机模型应用于交通流仿真，研究路径选择策略对系统吞吐的影响。相关成果发表于国际期刊与会议（见 Publications）。
+Applied cellular automata models to traffic flow simulation, studying how path selection strategies affect system throughput. Related results published in international journals and conferences (see Publications).
 
-### 3. 多种启发式方法设计小车仓库拣选路径
+### 3. Heuristic Warehouse Picking Path Design
 
-针对仓库拣选场景，设计并对比多种启发式路径规划方法，分析拣选效率与路径长度的权衡。
+Designed and compared multiple heuristic path planning methods for warehouse picking scenarios, analyzing trade-offs between picking efficiency and path length.
 
-### 4. Tabu Search 求解 PDPTW 问题
+### 4. Tabu Search for PDPTW
 
-使用禁忌搜索（Tabu Search）求解带时间窗的取送货问题（PDPTW），对比不同邻域结构与参数设置对求解质量的影响。
+Applied Tabu Search to solve the Pickup and Delivery Problem with Time Windows (PDPTW), comparing neighborhood structures and parameter settings on solution quality.
 
-## 技术栈
+## Tech Stack
 
-Java、CPLEX、元胞自动机仿真、Tabu Search、启发式算法
+Java, CPLEX, cellular automata simulation, Tabu Search, heuristic algorithms

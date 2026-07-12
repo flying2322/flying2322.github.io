@@ -1,7 +1,7 @@
 ---
 title: AI tools in action - cursor
 subtitle: Cursor and OpenClaw
-summary: 2026 年实测 Cursor 与 OpenClaw 等 AI 工具，记录从理解代码到交付上线的真实提效体验。
+summary: Hands-on notes from testing Cursor and OpenClaw in 2026 — from understanding codebases to shipping features.
 date: '2026-07-12T00:00:00Z'
 lastmod: '2026-07-12T00:00:00Z'
 draft: false
@@ -21,7 +21,7 @@ categories:
 projects: []
 
 image:
-  caption: 'AI 编程助手正在改变日常开发方式'
+  caption: 'AI coding assistants are changing everyday development'
   focal_point: Smart
   placement: 2
 
@@ -30,122 +30,120 @@ math: false
 
 ## AI tools in action
 
-最近工作的缘故尝试了多款 AI 工具，趁着这个周末记录一下使用感受。
+I've been trying several AI tools at work lately, and this weekend I decided to write down my impressions.
 
-首先让我产生振动和吃惊的第一个工具是 **Cursor**。我主要使用的是 Ubuntu 系统下的 `.deb` 安装包，最新版本号是 **3.10.20**，升级于 7 月 9 日。
+The first tool that genuinely surprised me was **Cursor**. I mainly use the `.deb` package on Ubuntu — latest version **3.10.20**, updated on July 9.
 
-它的能力已经有些超出我的想象：代码理解、生成、修改、调试几乎都能在一个界面里完成。实际使用下来，体感非常明显——提效很多，几乎可以快速理解用户需求并快速实现。之前多步骤工作流容易中断的问题，在引入多 Agent 能力之后也基本消失了。
-
-下面按我日常最高频的使用场景，介绍 Cursor 的五个核心模式。
+Its capabilities exceeded my expectations: code understanding, generation, editing, and debugging all happen in one interface. The productivity gain is very real — it can quickly grasp requirements and implement solutions. The multi-step workflow interruption issues from earlier versions have largely disappeared with multi-Agent support. At the core are five modes:
 
 ---
 
 ### 1. Agent
 
-**Agent 模式**是 Cursor 的默认主力模式，也是最接近「交给 AI 同事干活」的体验。
+**Agent mode** is Cursor's default workhorse — the closest experience to "handing a task to an AI colleague."
 
-开启后，AI 不再只回答一句话，而是会**自主规划步骤、读取文件、执行终端命令、修改代码、验证结果**，直到任务完成或需要你确认为止。适合：
+Once enabled, the AI doesn't just answer in one shot. It **autonomously plans steps, reads files, runs terminal commands, edits code, and verifies results** until the task is done or needs your approval. Great for:
 
-- 接手一个几万行代码的陌生项目，快速摸清目录结构和调用关系
-- 按需求实现新功能（例如新增 API、补测试、改配置）
-- 跨多个文件的批量重构
+- Onboarding to a large unfamiliar codebase (tens of thousands of lines) and mapping structure and call graphs
+- Implementing new features (APIs, tests, config changes)
+- Cross-file refactors
 
-我印象最深的一次，是让 Agent 理解整个仓储调度模块，它自动遍历了相关目录、画出主要函数调用关系，并直接定位到一个边界条件 bug。以前这类任务至少要半天，现在往往一两个小时就能进入可 review 的状态。
+One memorable case: I asked Agent to understand our entire warehouse scheduling module. It traversed relevant directories, mapped the main function call relationships, and pinpointed a boundary-condition bug. Tasks like this used to take half a day — now I often have something reviewable within an hour or two.
 
-**适合场景**：目标明确、改动范围可能跨文件，你希望 AI 主动推进而不是一步步追问。
+**Best for**: Clear goals, potentially cross-file changes — when you want the AI to drive progress rather than answer one question at a time.
 
-**注意**：涉及删除文件、强制推送、修改生产配置等操作时，建议开启确认或先看 diff，再批准执行。
+**Caution**: For destructive operations (deleting files, force push, production config changes), enable confirmation or review diffs before approving.
 
 ---
 
 ### 2. Plan
 
-**Plan 模式**在动手写代码之前，先帮你把问题拆成可执行的方案。
+**Plan mode** breaks a problem into an executable plan *before* writing code.
 
-和 Agent 直接开干不同，Plan 会先做调研：读相关代码、列出影响范围、比较几种实现路径，输出一份**分步骤计划**（通常包含要改哪些文件、风险点、测试建议）。你可以：
+Unlike Agent, which jumps in, Plan first investigates: reads relevant code, lists impact scope, compares implementation paths, and outputs a **step-by-step plan** (files to change, risks, testing suggestions). You can:
 
-- 在计划阶段就纠正方向，避免 AI 走错路后大量返工
-- 把复杂需求（例如「重构路径规划模块 + 保持接口兼容」）拆成可 review 的小块
-- 和团队对齐技术方案，再切换到 Agent 按计划实施
+- Correct direction early and avoid costly rework
+- Split complex requirements (e.g. "refactor path planning while keeping APIs compatible") into reviewable chunks
+- Align with your team on the technical approach, then switch to Agent for execution
 
-对我这种做算法和工程交付的人来说，Plan 特别适合**需求模糊或架构影响大**的任务。先 plan、再 agent，已经成为我处理中等以上复杂度需求的标准流程。
+For algorithm and engineering delivery work, Plan is especially useful when **requirements are fuzzy or architectural impact is large**. Plan → Agent has become my standard flow for medium-to-high complexity tasks.
 
-**适合场景**：新功能设计、重构、技术选型、还不确定「该怎么改」的阶段。
+**Best for**: New feature design, refactoring, tech selection — when you're not yet sure *how* to change things.
 
 ---
 
 ### 3. Debug
 
-**Debug 模式**面向「已经出问题、需要系统性排查」的场景，而不是泛泛聊天。
+**Debug mode** is for "something is broken and needs systematic investigation" — not casual chat.
 
-它会引导 AI 以调试工作流思考：收集错误信息、复现路径、提出假设、在代码里验证、根据结果缩小范围。相比普通 Chat，Debug 模式更强调：
+It guides the AI through a debugging workflow: gather error info, reproduce, hypothesize, verify in code, narrow scope based on evidence. Compared to regular Chat, Debug mode emphasizes:
 
-- 结合终端输出、日志、堆栈信息定位根因
-- 最小化改动，优先修复而不是顺手大改
-- 修复后建议如何验证（跑哪条命令、看哪些指标）
+- Root-cause analysis using terminal output, logs, and stack traces
+- Minimal changes — fix first, don't refactor opportunistically
+- Verification suggestions (which commands to run, what metrics to check)
 
-我用它处理过单元测试失败、Hugo 构建报错、Python 依赖冲突等问题。体感是：AI 会更少「猜」，更多「顺着证据链往下走」，和平时自己打断点、看 log 的节奏比较接近。
+I've used it for failing unit tests, Hugo build errors, and Python dependency conflicts. The AI guesses less and follows the evidence chain more — closer to how I'd debug with breakpoints and logs myself.
 
-**适合场景**：CI 失败、运行时异常、回归 bug、性能突然变差等需要**证据驱动**的排查。
+**Best for**: CI failures, runtime exceptions, regression bugs, sudden performance drops — **evidence-driven** troubleshooting.
 
 ---
 
 ### 4. MultiTask
 
-**MultiTask（多任务）模式**让你可以**并行跑多个 Agent 任务**，而不是排队等一个做完再做下一个。
+**MultiTask mode** lets you **run multiple Agent tasks in parallel** instead of queuing them one by one.
 
-例如同时让不同 Agent 分别：
+For example, simultaneously:
 
-- 一个查文档并总结 API 差异
-- 一个写单元测试
-- 一个更新 README 和部署说明
+- One agent summarizes API differences from docs
+- One writes unit tests
+- One updates README and deployment notes
 
-在大型仓库或赶版本时，这个模式对吞吐帮助很大。之前单一对话里长任务容易被上下文长度或中断影响，MultiTask 把任务隔离到不同会话，整体更稳定。
+In large repos or tight deadlines, this significantly improves throughput. Long single-threaded conversations used to hit context limits or interruptions; MultiTask isolates tasks into separate sessions for better stability.
 
-需要注意的是：并行任务可能改到同一批文件，合并前要检查冲突；互不相关的模块（文档 vs 测试 vs 独立服务）最适合并行。
+Note: parallel tasks may touch the same files — check for conflicts before merging. Unrelated modules (docs vs. tests vs. independent services) parallelize best.
 
-**适合场景**：截止日期紧、任务可拆分、希望**同时推进多条工作线**。
+**Best for**: Tight deadlines, splittable tasks, when you need **multiple workstreams running at once**.
 
 ---
 
 ### 5. Chat
 
-**Chat 模式**是最轻量、最保守的交互方式：以**问答和解释**为主，默认不会自主改你的代码或执行命令。
+**Chat mode** is the lightest interaction: **Q&A and explanation** by default, without autonomously editing code or running commands.
 
-适合：
+Great for:
 
-- 快速问语法、库用法、算法思路
-- 让 AI 解释某段代码在做什么
-- 讨论方案但暂时不想动文件
+- Quick syntax, library usage, or algorithm questions
+- Understanding what a code block does
+- Discussing approaches without touching files yet
 
-我经常在读别人代码时开 Chat，像带了一个随时可问的 senior colleague。它和 Agent 的边界很清晰：**Chat 求理解，Agent 求交付**。
+I often use Chat while reading others' code — like having a senior colleague on call. The boundary with Agent is clear: **Chat for understanding, Agent for delivery**.
 
-**适合场景**：学习、评审、头脑风暴、只要答案不要自动改仓库的时候。
-
----
-
-## 五个模式怎么选？
-
-| 模式 | 一句话 | 我会什么时候用 |
-|------|--------|----------------|
-| **Agent** | AI 自主推进任务 | 实现功能、改 bug、跨文件改动 |
-| **Plan** | 先方案后实施 | 复杂需求、重构、还没想清楚怎么改 |
-| **Debug** | 按证据链排查 | 测试失败、构建错误、线上异常 |
-| **MultiTask** | 多任务并行 | 赶版本、任务可拆分 |
-| **Chat** | 只问不改 | 读代码、学概念、讨论方案 |
-
-我个人的习惯是：**Plan → Agent → Debug** 串起来用；简单问题直接 **Chat**；项目冲刺时用 **MultiTask** 拉并行。
+**Best for**: Learning, code review, brainstorming — when you want answers, not automatic repo changes.
 
 ---
 
-## OpenClaw 与其他工具（简述）
+## Choosing the Right Mode
 
-副标题里提到的 **OpenClaw**，我仍在摸索和日常脚本自动化结合的方式，后续会单独写一篇。和 Cursor 相比，它更偏**开放生态下的 agent 编排**；Cursor 则深度绑定 IDE，对「读代码 → 改代码 → 跑命令」这条链路更顺滑。
+| Mode | In one line | When I use it |
+|------|-------------|---------------|
+| **Agent** | AI drives the task | Feature implementation, bug fixes, cross-file changes |
+| **Plan** | Plan first, then build | Complex requirements, refactoring, unclear approach |
+| **Debug** | Evidence-driven troubleshooting | Test failures, build errors, production issues |
+| **MultiTask** | Parallel agents | Sprint deadlines, splittable tasks |
+| **Chat** | Ask, don't change | Reading code, learning concepts, discussing ideas |
+
+My habit: **Plan → Agent → Debug** in sequence; **Chat** for simple questions; **MultiTask** during project sprints.
 
 ---
 
-## 小结
+## OpenClaw & Other Tools (Brief)
 
-2026 年的 AI 编程工具，已经不只是补全几行代码。Cursor 的五个模式覆盖了从**理解、规划、实现、并行到调试**的完整开发环。对做算法和工程交付的人来说，真正的提效来自：**选对模式 + 把任务描述清楚 + 在关键节点人工 review**。
+**OpenClaw**, mentioned in the subtitle, is still something I'm exploring for daily script automation — a dedicated post may follow. Compared to Cursor, it leans more toward **open-ecosystem agent orchestration**; Cursor is deeply IDE-integrated and smoother for the read-code → edit-code → run-commands loop.
 
-这篇只是使用笔记，不是教程。如果你也在用 Cursor，欢迎交流你更常用哪种模式——我明显是 Agent 和 Plan 用得最多。
+---
+
+## Summary
+
+In 2026, AI coding tools are far beyond line completion. Cursor's five modes cover the full development cycle from **understanding, planning, implementation, parallelism, to debugging**. For algorithm and engineering work, real productivity comes from **choosing the right mode + describing tasks clearly + human review at key checkpoints**.
+
+These are usage notes, not a tutorial. If you're also using Cursor, I'd love to hear which mode you reach for most — for me, it's Agent and Plan.

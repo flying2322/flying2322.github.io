@@ -1,6 +1,6 @@
 ---
-title: 多机器人路径规划与调度
-summary: 海柔仓储机器人系统的路径规划死锁解锁、任务分配与多机型库位选择优化。
+title: Multi-Robot Path Planning & Scheduling
+summary: Path planning deadlock resolution, task assignment, and multi-model slot selection optimization for HAI Robotics warehouse systems.
 tags:
   - Robotics
   - Operations Research
@@ -9,7 +9,7 @@ date: '2023-06-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: 多 AGV 路径规划与死锁解锁
+  caption: Multi-AGV path planning and deadlock resolution
   focal_point: Smart
 
 links: []
@@ -20,22 +20,22 @@ url_video: ''
 slides: ''
 ---
 
-海柔机器人（深圳市库宝软件）软件部算法组核心项目，面向多机器人仓储调度系统。
+Core project of the HAI Robotics (Shenzhen Kubao Software) algorithm team, targeting multi-robot warehouse scheduling systems.
 
-## 路径规划模块
+## Path Planning Module
 
-- 主导**死锁解锁算法**开发，解决多机器人在狭窄通道中的拥堵与互锁问题
-- 优化路径规划算法效率，显著提升机器人搬箱效率与订单履约率
+- Led **deadlock resolution algorithm** development to address congestion and mutual blocking in narrow aisles
+- Optimized path planning efficiency, significantly improving tote-moving throughput and order fulfillment rates
 
-## 任务分配模块
+## Task Assignment Module
 
-- 优化**多机型 A61 机器人**在不同场景下的库位选择逻辑
-- 设计**多背篓料箱机器人**的回库策略，平衡吞吐与能耗
+- Optimized **multi-model A61 robot** slot selection logic across different operational scenarios
+- Designed **multi-tote robot** return-to-storage strategies balancing throughput and energy consumption
 
-## 欧洲项目支持
+## European Project Support
 
-2023 年赴荷兰阿姆斯特丹外派期间，完成输送线、安全门等上下游设备的调度系统接入与客户联调，推动项目快速上线。
+During the 2023 assignment in Amsterdam, integrated conveyor lines, safety gates, and other upstream/downstream equipment with the scheduling system, coordinating customer commissioning for rapid go-live.
 
-## 技术栈
+## Tech Stack
 
-C/C++、多智能体路径规划（MAPF）、启发式调度、仿真验证
+C/C++, Multi-Agent Path Finding (MAPF), heuristic scheduling, simulation validation

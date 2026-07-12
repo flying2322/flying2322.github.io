@@ -1,6 +1,6 @@
 ---
-title: 内点法求解非线性规划
-summary: Java 实现内点法求解器，并与遗传算法、单纯形法、神经网络等方法进行效率对比。
+title: Interior Point Method for Nonlinear Programming
+summary: Java implementation of an interior point solver with efficiency comparison against genetic algorithms, simplex, and neural network methods.
 tags:
   - Operations Research
 date: '2019-01-01T00:00:00Z'
@@ -8,7 +8,7 @@ date: '2019-01-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: 非线性规划求解算法对比
+  caption: Nonlinear programming solver algorithm comparison
   focal_point: Smart
 
 links: []
@@ -19,15 +19,15 @@ url_video: ''
 slides: ''
 ---
 
-清华大学硕士课程项目（2018.10 – 2019.01），实现内点法求解器并对比多种优化算法。
+Tsinghua University master's course project (Oct 2018 – Jan 2019) implementing an interior point solver and benchmarking multiple optimization algorithms.
 
-## 工作内容
+## Work Scope
 
-1. **内点法求解器**：在 Java 中实现内点法，步长与搜索方向的确定采用 Grid Search 与统计方法进行比较
-2. **多算法实现**：同时实现遗传算法、单纯形法、神经网络算法，针对不同类型问题求解
-3. **效率对比**：对比不同算法在同一问题上的迭代次数与程序运行时间
-4. **差异分析**：针对同一类问题，分析不同求解器之间的性能差异与适用边界
+1. **Interior Point Solver**: Implemented interior point method in Java; compared step size and search direction determination via grid search and statistical methods
+2. **Multi-Algorithm Implementation**: Also implemented genetic algorithm, simplex method, and neural network approaches for different problem types
+3. **Efficiency Benchmarking**: Compared iteration counts and runtime across algorithms on identical problems
+4. **Comparative Analysis**: Analyzed performance differences and applicability boundaries across solvers for the same problem class
 
-## 技术栈
+## Tech Stack
 
-Java、非线性规划、内点法、遗传算法、单纯形法
+Java, nonlinear programming, interior point method, genetic algorithm, simplex method

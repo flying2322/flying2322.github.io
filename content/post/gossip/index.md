@@ -4,8 +4,8 @@ subtitle: Cursor and OpenClaw
 summary: 2026 年实测 Cursor 与 OpenClaw 等 AI 工具，记录从理解代码到交付上线的真实提效体验。
 date: '2026-07-12T00:00:00Z'
 lastmod: '2026-07-12T00:00:00Z'
-draft: false
-featured: true
+draft: true
+featured: false
 
 authors:
   - admin

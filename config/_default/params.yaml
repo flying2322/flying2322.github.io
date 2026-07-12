@@ -18,7 +18,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: '李文鹏的个人主页 — 路径规划与运筹优化算法工程师，清华大学物流工程硕士。'
+    description: 'PandaBoy — Personal site of Wenpeng Li, Operations Research Algorithm Engineer specializing in path planning and logistics optimization.'
     twitter: 'flying232'
   analytics:
     google_analytics: ''
@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} 李文鹏 (Wenpeng Li). This work is licensed under {license}'
+    notice: '© {year} PandaBoy (Wenpeng Li). This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

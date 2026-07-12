@@ -1,6 +1,6 @@
 ---
-title: 智能堆场运筹优化
-summary: 招商局集团交通物流场景下的智能堆场位分配算法，覆盖空箱调度、收箱找位等核心业务。
+title: Smart Yard Operations Research Optimization
+summary: Smart yard slot allocation algorithms for CMG transportation and logistics, covering empty container dispatch and inbound slot recommendation.
 tags:
   - Operations Research
 date: '2025-10-01T00:00:00Z'
@@ -8,7 +8,7 @@ date: '2025-10-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: 智能堆场位分配与集装箱调度
+  caption: Smart yard slot allocation and container dispatch
   focal_point: Smart
 
 links: []
@@ -19,21 +19,21 @@ url_video: ''
 slides: ''
 ---
 
-隶属于招商局金融科技有限公司 AI 平台研发部，主导招商局集团交通物流业务的运筹优化算法体系建设。
+Led the operations research optimization algorithm framework for China Merchants Group's transportation and logistics business within the AI Platform R&D Department.
 
-## 核心场景
+## Core Scenarios
 
-- **智能堆场**：集装箱堆场位分配与堆存策略优化
-- **空箱调度**：空箱资源在全集团范围内的调配优化
-- **船舶订单管理**：船舶靠泊与装卸订单的协同调度
-- **收箱找位**：进场集装箱的最优堆位推荐
+- **Smart Yard**: Container yard slot allocation and stacking strategy optimization
+- **Empty Container Dispatch**: Group-wide empty container resource allocation
+- **Vessel Order Management**: Coordinated scheduling of vessel berthing and loading/unloading orders
+- **Inbound Slot Recommendation**: Optimal yard slot recommendation for incoming containers
 
-## 主要成果
+## Key Achievements
 
-- 成功上线**智能堆场位分配算法**，支撑实际业务运行
-- 前瞻性调研**运筹大模型（ORLM）**在集团物流场景的落地路径
-- 针对**集装箱预配载问题（CPMP）**开展理论预研与技术验证
+- Successfully deployed **smart yard slot allocation algorithm** to production
+- Conducted forward-looking research on **Operations Research Large Language Model (ORLM)** adoption in group logistics scenarios
+- Performed theoretical research and technical validation on the **Container Pre-Marshalling Problem (CPMP)**
 
-## 技术栈
+## Tech Stack
 
-MIP 建模、启发式算法、业务规则引擎、Java / Python 算法服务化
+MIP modeling, heuristic algorithms, business rule engine, Java / Python algorithm services

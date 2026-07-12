@@ -20,7 +20,7 @@ publication_short: In *ISMT 2019*
 
 abstract: This paper analyzes warehouse picking efficiency using a cellular automaton model. The approach captures the spatial and temporal dynamics of picker movement and order fulfillment, providing a framework for evaluating picking strategies and warehouse layout designs.
 
-summary: 基于元胞自动机的仓库拣选效率分析，国际会议口头报告。
+summary: Warehouse picking efficiency analysis using cellular automata, presented at an international conference.
 
 tags:
   - Cellular Automata
@@ -47,6 +47,6 @@ projects:
 slides: ''
 ---
 
-第三届国际多式联运研讨会（The 3rd International Symposium on Multimodal Transportation）会议论文，于 2019 年 12 月在新加坡进行口头报告（Conference presentation）。
+Conference paper at *The 3rd International Symposium on Multimodal Transportation*, presented orally in Singapore, December 2019.
 
-基于元胞自动机模型分析仓库拣选效率，为拣选策略与仓库布局优化提供仿真评估框架。
+Uses a cellular automaton model to analyze warehouse picking efficiency, providing a simulation framework for evaluating picking strategies and warehouse layout designs.

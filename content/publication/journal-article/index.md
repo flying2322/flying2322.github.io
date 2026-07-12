@@ -16,7 +16,7 @@ publication_short: "*Int. J. Simul. Model.*"
 
 abstract: This paper presents a simulation analysis of robotic mobile fulfillment systems (RMFS) based on cellular automata. The model captures the dynamic interactions between mobile robots, storage racks, and workstations, enabling evaluation of system throughput and congestion under varying operational parameters. Results provide insights for warehouse automation system design and optimization.
 
-summary: 基于元胞自动机的移动机器人履行系统（RMFS）仿真分析，发表于 SCI 一区期刊。
+summary: Cellular automata simulation analysis of robotic mobile fulfillment systems (RMFS), published in SCI Q1 journal.
 
 tags:
   - Cellular Automata
@@ -44,6 +44,6 @@ projects:
 slides: ''
 ---
 
-清华大学硕士毕业论文相关成果。使用元胞自动机对移动机器人履行系统进行建模与仿真，分析机器人数、工作站布局等参数对系统性能的影响。
+Master's thesis research at Tsinghua University. Used cellular automata to model and simulate robotic mobile fulfillment systems, analyzing how parameters such as robot count and workstation layout affect system performance.
 
-**期刊信息**：*International Journal of Simulation Modelling*, Vol. 20, No. 3, pp. 583–594, July 2021. **SCI 一区**.
+**Journal**: *International Journal of Simulation Modelling*, Vol. 20, No. 3, pp. 583–594, July 2021. **SCI Q1**.

@@ -1,6 +1,6 @@
 ---
-title: 安全马甲定位算法
-summary: UWB 安全马甲定位模块的开发与调度系统接入，保障人机协作场景下的作业安全。
+title: Safety Vest Positioning Algorithm
+summary: UWB safety vest positioning module development and scheduling system integration for human-robot collaboration safety.
 tags:
   - Robotics
 date: '2023-03-01T00:00:00Z'
@@ -8,7 +8,7 @@ date: '2023-03-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: 安全马甲定位与调度系统集成
+  caption: Safety vest positioning and scheduling system integration
   focal_point: Smart
 
 links: []
@@ -19,18 +19,18 @@ url_video: ''
 slides: ''
 ---
 
-深度参与海柔机器人**安全马甲（Safety Vest）定位算法**模块的开发与系统集成。
+Deep involvement in the development and system integration of HAI Robotics' **Safety Vest positioning algorithm** module.
 
-## 项目背景
+## Background
 
-在仓储机器人作业场景中，人员穿戴安全马甲进入工作区域时，调度系统需要实时感知人员位置，触发相应的减速、停车或路径重规划策略，保障人机协作安全。
+In warehouse robot operations, when personnel wearing safety vests enter work zones, the scheduling system must track their real-time location and trigger appropriate responses — speed reduction, stopping, or path replanning — to ensure safe human-robot collaboration.
 
-## 主要工作
+## Key Contributions
 
-- 参与 UWB 定位算法模块的设计与实现
-- 完成定位模块与**调度系统的接口对接**，实现实时位置上报与策略联动
-- 赴欧洲现场完成安全马甲设备的接入调试与客户验收
+- Participated in UWB positioning algorithm module design and implementation
+- Completed **scheduling system API integration** for real-time location reporting and policy coordination
+- Conducted on-site commissioning and customer acceptance of safety vest devices in Europe
 
-## 技术栈
+## Tech Stack
 
-UWB 定位、C/C++、调度系统 API 集成、现场联调
+UWB positioning, C/C++, scheduling system API integration, on-site commissioning
