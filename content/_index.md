@@ -34,7 +34,7 @@ sections:
         - title: Operations Research Algorithm Engineer
           company: China Merchants Group Financial Technology
           company_url: ''
-          company_logo: org-gc
+          company_logo: china-merchants
           location: Nanshan, Shenzhen
           date_start: '2025-07-01'
           date_end: '2026-01-31'
@@ -49,7 +49,7 @@ sections:
         - title: Operations Research Algorithm Engineer
           company: Shenzhen Kubao Software (HAI Robotics)
           company_url: 'https://www.hairobotics.com/'
-          company_logo: org-gc
+          company_logo: hai-robotics
           location: Bao'an, Shenzhen
           date_start: '2022-03-01'
           date_end: '2024-11-30'
@@ -63,7 +63,7 @@ sections:
         - title: Technical Support · Algorithm Specialist (Overseas)
           company: HAI Robotics EMEA
           company_url: 'https://www.hairobotics.com/'
-          company_logo: org-x
+          company_logo: hai-robotics
           location: Amsterdam, Netherlands
           date_start: '2023-07-01'
           date_end: '2024-01-31'
@@ -201,30 +201,6 @@ sections:
     design:
       columns: '2'
       view: card
-  - block: collection
-    content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: true
-    design:
-      columns: '2'
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
   - block: tag_cloud
     content:
       title: Popular Topics

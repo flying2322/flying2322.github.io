@@ -50,25 +50,35 @@ education:
 # Skills
 skills:
   - name: Technical
+    color: '#1565C0'
+    color_border: '#0D47A1'
     items:
       - name: C/C++
         description: Path planning, solver development
         percent: 90
-        icon: C++
-        icon_pack: fas
+        color: '#00599C'
+        color_border: '#004482'
+        icon: cplusplus
+        icon_pack: custom
       - name: Java
         description: MIP modeling, CPLEX integration
         percent: 85
+        color: '#E76F00'
+        color_border: '#B85600'
         icon: java
         icon_pack: fab
       - name: Python
         description: Algorithm prototyping, data analysis
         percent: 80
+        color: '#3776AB'
+        color_border: '#2B5F8A'
         icon: python
         icon_pack: fab
       - name: Operations Research
         description: B&B, B&P, B&C, Lagrangian relaxation
         percent: 90
+        color: '#6A1B9A'
+        color_border: '#4A148C'
         icon: chart-line
         icon_pack: fas
   - name: Hobbies
@@ -78,17 +88,44 @@ skills:
       - name: Running
         description: ''
         percent: 80
+        color: '#2E7D32'
+        color_border: '#1B5E20'
         icon: person-running
         icon_pack: fas
       - name: Photography
         description: ''
         percent: 80
-        icon: camera-retro
+        color: '#00838F'
+        color_border: '#006064'
+        icon: camera
         icon_pack: fas
       - name: Writing
         description: ''
         percent: 70
+        color: '#5D4037'
+        color_border: '#3E2723'
         icon: pen
+        icon_pack: fas
+      - name: Gaming
+        description: ''
+        percent: 85
+        color: '#7B1FA2'
+        color_border: '#4A148C'
+        icon: gamepad
+        icon_pack: fas
+      - name: Reading
+        description: ''
+        percent: 75
+        color: '#1565C0'
+        color_border: '#0D47A1'
+        icon: book-open
+        icon_pack: fas
+      - name: Driving
+        description: ''
+        percent: 70
+        color: '#EF6C00'
+        color_border: '#E65100'
+        icon: car
         icon_pack: fas
 
 # Social/Academic Networking
@@ -118,6 +155,6 @@ I earned my master's degree in Logistics Engineering from **Tsinghua University*
 
 Throughout my career at **HAI Robotics (Shenzhen Kubao Software)** and **China Merchants Group Financial Technology**, I've led core modules including multi-robot path planning deadlock resolution, task assignment, and safety vest positioning. I was dispatched to Amsterdam in 2023 to support European project delivery. Most recently, I deployed smart yard slot allocation algorithms for CMG's transportation and logistics business, and conducted preliminary research on ORLM and the Container Pre-Marshalling Problem (CPMP).
 
-I believe strong algorithm solutions come from **solid modeling skills, engineering discipline, and deep understanding of business contexts**. Outside of work, I enjoy running, badminton, and photography — and I use this space to document technical explorations along the way.
+I believe strong algorithm solutions come from **solid modeling skills, engineering discipline, and deep understanding of business contexts**. Outside of work, I enjoy running, gaming, reading, driving, and photography — and I use this space to document technical explorations along the way.
 
 {style="text-align: justify;"}

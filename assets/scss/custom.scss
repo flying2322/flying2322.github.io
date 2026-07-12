@@ -1,0 +1,52 @@
+/* Per-skill progress bar colors (fallback when item-level color is not applied by theme) */
+
+#skills .skills-content .skill-item:nth-child(1) .skill-progress-bar,
+#about .skills-content .skill-item:nth-child(1) .skill-progress-bar {
+  background-color: #00599C !important;
+}
+
+#skills .skills-content .skill-item:nth-child(2) .skill-progress-bar,
+#about .skills-content .skill-item:nth-child(2) .skill-progress-bar {
+  background-color: #E76F00 !important;
+}
+
+#skills .skills-content .skill-item:nth-child(3) .skill-progress-bar,
+#about .skills-content .skill-item:nth-child(3) .skill-progress-bar {
+  background-color: #3776AB !important;
+}
+
+#skills .skills-content .skill-item:nth-child(4) .skill-progress-bar,
+#about .skills-content .skill-item:nth-child(4) .skill-progress-bar {
+  background-color: #6A1B9A !important;
+}
+
+/* Hobbies group — second skill category */
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(1) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(1) .skill-progress-bar {
+  background-color: #2E7D32 !important;
+}
+
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(2) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(2) .skill-progress-bar {
+  background-color: #00838F !important;
+}
+
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(3) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(3) .skill-progress-bar {
+  background-color: #5D4037 !important;
+}
+
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(4) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(4) .skill-progress-bar {
+  background-color: #7B1FA2 !important;
+}
+
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(5) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(5) .skill-progress-bar {
+  background-color: #1565C0 !important;
+}
+
+#skills .skills-content .skill-category:nth-child(2) .skill-item:nth-child(6) .skill-progress-bar,
+#about .skills-content .skill-category:nth-child(2) .skill-item:nth-child(6) .skill-progress-bar {
+  background-color: #EF6C00 !important;
+}
