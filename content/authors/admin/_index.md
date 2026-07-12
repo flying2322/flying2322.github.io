@@ -27,15 +27,7 @@ organizations:
     url: https://www.tsinghua.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Operations research algorithm engineer focused on path planning, warehouse logistics scheduling, and smart yard optimization. MEng from Tsinghua University in Logistics Engineering. Previously led multi-robot path planning and safety vest positioning at HAI Robotics, with an overseas assignment in Amsterdam. Skilled in MIP, heuristic algorithms, and machine learning for complex business systems.
-
-# Interests to show in About widget
-interests:
-  - Path Planning & Multi-Robot Scheduling
-  - Operations Research & MIP Modeling
-  - Warehouse Logistics Optimization
-  - Cellular Automata Simulation
-  - Machine Learning Applications
+bio: OR / path-planning engineer · Shenzhen. MIP · MAPF · yard & warehouse dispatch. Tsinghua MEng. Ex-HAI Robotics, CMG FinTech.
 
 # Education to show in About widget
 education:
@@ -46,6 +38,14 @@ education:
     - course: BSc in Industrial Engineering
       institution: Beijing Information Science & Technology University
       year: 2015
+
+# Interests to show in About widget
+interests:
+  - Path Planning & Multi-Robot Scheduling
+  - Operations Research & MIP Modeling
+  - Warehouse Logistics Optimization
+  - Cellular Automata Simulation
+  - Machine Learning Applications
 
 # Skills
 skills:
@@ -149,12 +149,8 @@ social:
 highlight_name: true
 ---
 
-Hi, I'm Dominic Li (Wenpeng Li), based in Shenzhen, China. I'm an **Operations Research Algorithm Engineer** specializing in path planning and logistics optimization.
+**OR / path-planning engineer** @ Shenzhen — Tsinghua MEng (Logistics Eng), BSc Industrial Eng. Research: cellular-automata RMFS sim → *Int. J. Simul. Model.* (SCI Q1). I build dispatch systems for robots, yards, and containers: **MAPF, MIP, heuristics, ML**.
 
-I earned my master's degree in Logistics Engineering from **Tsinghua University**, where my thesis focused on **cellular automata simulation of robotic mobile fulfillment systems** — published in the *International Journal of Simulation Modelling* (SCI Q1). My undergraduate degree is in Industrial Engineering from Beijing Information Science & Technology University.
-
-Throughout my career at **HAI Robotics (Shenzhen Kubao Software)** and **China Merchants Group Financial Technology**, I've led core modules including multi-robot path planning deadlock resolution, task assignment, and safety vest positioning. I was dispatched to Amsterdam in 2023 to support European project delivery. Most recently, I deployed smart yard slot allocation algorithms for CMG's transportation and logistics business, and conducted preliminary research on ORLM and the Container Pre-Marshalling Problem (CPMP).
-
-I believe strong algorithm solutions come from **solid modeling skills, engineering discipline, and deep understanding of business contexts**. Outside of work, I enjoy running, gaming, reading, driving, and photography — and I use this space to document technical explorations along the way.
+Shipped @ **HAI Robotics**: MAPF deadlock unlock, multi-tote task assignment, UWB safety-vest integration; EMEA field deploy (Amsterdam, 2023). @ **CMG FinTech**: smart-yard slot allocation in prod; ORLM + CPMP pre-research. Stack: C++/Java/Python. Off-duty: run · game · read · drive · photo. **This site = public lab notes.**
 
 {style="text-align: justify;"}

@@ -72,6 +72,20 @@
   background: url('/media/icons/cplusplus.svg') center / contain no-repeat;
 }
 
+/* Swap Education before Interests in About section */
+#about .row:has(.ul-interests):has(.ul-edu) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about .row:has(.ul-interests):has(.ul-edu) > div:has(.ul-edu) {
+  order: 1;
+}
+
+#about .row:has(.ul-interests):has(.ul-edu) > div:has(.ul-interests) {
+  order: 2;
+}
+
 /* Hide Hugo Blox default footer (copyright + "Published with" attribution) */
 .site-footer,
 footer.page-footer,
