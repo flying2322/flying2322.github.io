@@ -35,6 +35,7 @@ bio: I'm an Operations Research(OR) engineer who finds joy in bridging the gap b
 
 # Interests to show in About widget
 interests:
+  - Robotics
   - Operations Research Topics
   - Warehouse Management Optimization
   - Multi-Agent Pathing Finding

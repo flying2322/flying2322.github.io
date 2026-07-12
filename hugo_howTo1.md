@@ -48,3 +48,231 @@ Gallery 对应的是 `assets/media/albums/`。
 *   **改页面列表**：去对应的 `content/post/`、`content/project/` 等文件夹删减或编辑文件。
 *   **改图片**：把图片放到对应的文件夹或替换原有的 `featured.jpg`。
 修改完保存后，你在本地运行 Hugo 服务器应该就能实时看到变化了。
+
+---
+## 项目概览
+
+这是基于 **Hugo + Hugo Blox（原 Wowchemy Academic）** 的个人学术/技术主页，部署在 **GitHub Pages**（`https://flying2322.github.io`）。
+
+核心特点：
+
+- **内容驱动**：主要改 Markdown + YAML 配置，不写复杂 HTML
+- **单页首页**：`content/_index.md` 用多个 `block` 拼出 About、Experience、Posts、Projects 等区块
+- **自动部署**：推送到 `main` 分支后，`.github/workflows/publish.yaml` 会用 Hugo 构建并发布
+
+当前站点已有一部分你的个人信息（Dominic Li、运筹算法工程师、海柔机器人等），但首页 Hero 区仍是模板默认文案，部分全局配置（如 `baseURL`）也还没完全改成你的域名。
+
+---
+
+## 一、撰写一篇新的科技博文
+
+### 需要修改/新增的位置
+
+在 `content/post/` 下**新建一个文件夹**，例如：
+
+```
+content/post/my-ai-article/
+├── index.md          # 博文正文（必填）
+└── featured.jpg      # 封面图（可选）
+```
+
+### 博文模板示例
+
+```markdown
+---
+title: 多智能体路径规划实践笔记
+subtitle: 从理论到仓库机器人落地
+summary: 记录 MAPF 算法在仓储场景中的工程化经验。
+date: '2026-07-12T00:00:00Z'
+lastmod: '2026-07-12T00:00:00Z'
+draft: false          # true = 草稿，不发布
+featured: false       # true = 首页「精选」展示
+
+authors:
+  - admin             # 对应 content/authors/admin/
+
+tags:
+  - Robotics
+  - Algorithm
+
+categories:
+  - Tech
+
+# 可选：关联到某个项目
+projects:
+  - example
+
+image:
+  caption: '封面说明'
+  focal_point: Smart
+  placement: 2
+
+# 写技术文时可开启
+math: false
+---
+
+正文用 Markdown 写即可，支持代码高亮、公式、图表等。
+
+```python
+def plan_path(start, goal):
+    return [start, goal]
+```
+
+## 小节标题
+
+更多内容...
+```
+
+### 参考现有示例
+
+| 用途 | 文件 |
+|------|------|
+| 基础博文结构 | `content/post/getting-started/index.md` |
+| 技术写作（代码、公式、图表） | `content/post/writing-technical-content/index.md` |
+| Jupyter 博文 | `content/post/blog-with-jupyter/index.md` |
+
+### 发布后如何显示
+
+- 导航栏 **Posts** → 首页 `#posts` 区块（`content/_index.md` 里 `block: collection`，`folders: [post]`）
+- 设置 `draft: false` 才会发布
+- 设置 `featured: true` 可突出展示
+- `date` 越新，排序越靠前
+
+---
+
+## 二、更新工作与项目经历
+
+工作经历和项目分布在**两个层级**，建议都维护。
+
+### 1. 个人档案（About 区块）
+
+**文件：** `content/authors/admin/_index.md`
+
+这里控制首页 **Biography / Skills** 以及博文作者信息：
+
+| 字段 | 作用 |
+|------|------|
+| `title` / `role` | 姓名、职位 |
+| `bio` | 简短简介 |
+| 正文 Markdown | About 区长介绍 |
+| `organizations` | 当前单位/链接 |
+| `interests` | 研究方向/兴趣 |
+| `education` | 教育背景 |
+| `skills` | 技能条 |
+| `social` | GitHub、LinkedIn、简历链接等 |
+
+头像放在同目录：`content/authors/admin/avatar.jpg`。
+
+### 2. 首页工作经历（Experience 区块）
+
+**文件：** `content/_index.md`（约第 53–88 行）
+
+在 `block: experience` → `items` 下增删条目：
+
+```yaml
+- title: Operations Research Algorithm Engineer
+  company: Hai Robotics
+  company_url: 'hairobotics.com'
+  company_logo: org-gc      # 图标在 assets/media/icons/brands/
+  location: Shenzhen
+  date_start: '2022-03-22'
+  date_end: ''              # 空 = 至今
+  description: |2-
+      * 路径规划算法
+      * UWB 定位
+```
+
+新增一段工作，就复制一个 `- title: ...` 块；`date_end` 留空表示在职。
+
+### 3. 项目经历（Projects 区块）
+
+**目录：** `content/project/`
+
+每个子文件夹 = 一个项目，例如 `content/project/warehouse-robot/`：
+
+```markdown
+---
+title: 仓储机器人路径规划系统
+summary: 面向多 AGV 的实时避障与调度。
+tags:
+  - Robotics
+  - Demo          # 对应首页筛选标签
+date: '2024-06-01T00:00:00Z'
+external_link: ''  # 填 URL 则跳转到外部，不显示详情页
+
+links:
+  - icon: github
+    icon_pack: fab
+    name: Code
+    url: https://github.com/xxx
+
+image:
+  caption: 项目截图
+  focal_point: Smart
+---
+
+项目详细描述（Markdown）...
+```
+
+操作方式：
+
+- **新增项目**：新建文件夹 + `index.md` + 可选 `featured.jpg`
+- **修改项目**：编辑对应 `index.md`
+- **删除项目**：删除整个文件夹
+- **首页筛选**：`tags` 需与 `content/_index.md` 里 `block: portfolio` 的 `buttons` 一致（如 `Deep Learning`、`Demo`）
+
+参考：`content/project/example/index.md`、`content/project/external-project/index.md`。
+
+### 4. 成就/证书（可选）
+
+**文件：** `content/_index.md` 中 `block: accomplishments`（约第 89–130 行）
+
+证书、课程、奖项等在这里维护。
+
+---
+
+## 三、其他你可能要改的文件
+
+| 文件 | 用途 |
+|------|------|
+| `config/_default/hugo.yaml` | 站点名（当前 `PandaBoy`）、`baseURL`（建议改为 `https://flying2322.github.io/`） |
+| `config/_default/menus.yaml` | 顶部导航顺序与链接 |
+| `config/_default/params.yaml` | 主题、字体、SEO、评论等全局设置 |
+| `content/_index.md` | 首页各区块顺序、联系信息、Gallery 等 |
+| `static/uploads/resume.pdf` | 菜单栏 CV 下载 |
+| `assets/media/albums/demo/` | 图库照片 |
+
+---
+
+## 四、推荐工作流
+
+1. **本地预览**（需安装 Hugo Extended）：
+   ```bash
+   cd /home/wp/flying2322.github.io
+   hugo server
+   ```
+   浏览器打开 `http://localhost:1313` 实时查看。
+
+2. **编辑内容**：
+   - 新博文 → `content/post/新文件夹/index.md`
+   - 工作/技能 → `content/authors/admin/_index.md` + `content/_index.md` 的 experience
+   - 项目 → `content/project/新文件夹/index.md`
+
+3. **发布**：提交并 push 到 `main`，GitHub Actions 自动构建部署。
+
+---
+
+## 五、快速对照表
+
+| 你的需求 | 主要修改文件 |
+|----------|--------------|
+| 写一篇科技博文 | `content/post/<slug>/index.md` |
+| 更新简介、技能、教育 | `content/authors/admin/_index.md` |
+| 更新工作经历时间线 | `content/_index.md` → `experience` 区块 |
+| 更新/新增项目 | `content/project/<项目名>/index.md` |
+| 更新证书/成就 | `content/_index.md` → `accomplishments` 区块 |
+| 更新联系方式 | `content/_index.md` → `contact` 区块 |
+| 更新简历 PDF | `static/uploads/resume.pdf` |
+| 改站点名/域名 | `config/_default/hugo.yaml` |
+
+如果你愿意，我可以直接帮你：新建一篇博文模板、更新某段工作经历，或把 `baseURL`/首页 Hero 改成你的个人介绍。说一下具体内容即可。

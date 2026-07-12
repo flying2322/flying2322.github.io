@@ -2,9 +2,13 @@
 
 ## Note
 
+
+### 2026.7.12
+- [Done] 内容同步更新
+
 ### 2026.2.7
 - [Done] 2026.2.7 修复了域名过长，和github仓库名不一致的问题
-- Modify details important
+- [Done] Modify details important
   
 ### 2024.4.19
 - 第一次部署成功，但是域名有点奇怪：https://flying2322.github.io/dominicli.github.io/ 希望简短好记一些。或许想办法申请下来：dominic.cn

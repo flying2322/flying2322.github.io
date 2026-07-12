@@ -4,8 +4,8 @@ subtitle: 从理论到仓库机器人落地
 summary: 记录 MAPF 算法在仓储场景中的工程化经验。
 date: '2026-07-12T00:00:00Z'
 lastmod: '2026-07-12T00:00:00Z'
-draft: false          # true = 草稿，不发布
-featured: false       # true = 首页「精选」展示
+draft:  true         # true = 草稿，不发布
+featured: true # false       # true = 首页「精选」展示
 
 authors:
   - admin             # 对应 content/authors/admin/
@@ -50,5 +50,33 @@ def plan_path(start, goal):
 2. 生成主要函数和模块的调用图
 3. 直接改bug和代码提交
 4. 直接分支管理
-使用下来的体感还是很明显的，提效很多，几乎可以快速进行理解用户需求并快速实现，甚至上线了多Agent模式，之前的中中的中毒终端在值中
+使用下来的体感还是很明显的，提效很多，几乎可以快速进行理解用户需求并快速实现，甚至上线了多Agent模式，之前的中断工作流的问题也已经基本消失。其核心其实是五个模式：
+1. Agent
+这也是
+
+2. Plan
+
+
+3. Debug
+
+
+
+4. MultiTask
+
+
+5. Chat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
