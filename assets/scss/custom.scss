@@ -71,3 +71,14 @@
   inset: 0;
   background: url('/media/icons/cplusplus.svg') center / contain no-repeat;
 }
+
+/* Hide Hugo Blox default footer (copyright + "Published with" attribution) */
+.site-footer,
+footer.page-footer,
+.powered-by,
+.copyright-notice,
+.copyright-license,
+.footer-license,
+p.powered-by {
+  display: none !important;
+}
