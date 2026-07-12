@@ -2,8 +2,8 @@
 # Display name
 title: Dominic Li
 
-# Name pronunciation (optional)
-name_pronunciation: Wenpeng Li
+# Name pronunciation (optional) — leave empty to hide on homepage
+# name_pronunciation: Wenpeng Li
 
 # Full name (for SEO)
 first_name: Wenpeng
